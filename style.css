@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 section{
@@ -55,7 +56,7 @@ line-height: 1.5em;
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-    color: #111;
+    color: #111
 }
 .heading p{
     font-style: italic;
@@ -158,4 +159,294 @@ header.sticky .logo,
 header.sticky ul li a
 {
     color: #111;
+}
+
+/* Creating for Skill sectons*/
+.skills{
+    background: #111;
+}
+.heading.white p{
+    color: #fff;
+}
+.skills .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+.skills .content .skillsBx{
+    color: #fff;
+    background: #161616;
+    margin:10px 15px;
+    padding:30px 15px;
+    text-align: center;
+    max-width: 360px;
+}
+.skills .content .skillsBx:hover{
+    border-bottom: 2px solid #66CC66;
+    cursor: pointer;
+}
+.skills .content .skillsBx .fa{
+    color: #66CC66;
+}
+
+/* Designing Contact Layout*/
+.contact{
+    background: #111;
+}
+.formBx{
+    min-width: 60%;
+}
+.formBx form{
+    display:flex;
+    flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background:transparent;
+    border:none;
+    outline: none;
+    background: #161616;
+    color: #fff;
+    resize: vertical;
+}
+.formBx form input:focus,
+.formBx form textarea:focus{
+    border-bottom: 4px solid #66CC66;
+    transition: 0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -ms-transition:0.5s;
+    -o-transition:0.5s;
+}
+.formBx form input::placeholder
+.formBx form input::placeholder{
+    color: #999;
+
+}
+.formBx form input[type="submit"]{
+    background: #66CC66;
+    max-width: 250px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    -webkit-radius:50px;
+    -moz-radius:50px;
+    -ms-radius:50px;
+    -o-radius:50px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.contactInfo{
+    min-width: 40%;
+}
+.contactInfo p{
+    color: #999;
+}
+.contactInfoBx{
+    position:relative;
+}
+.contactInfoBx .box{
+    position:relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfoBx .box .icon{
+    color: #fff;
+    min-width: 40px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+.contactInfoBx .box .text{
+    color: #999;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactInfoBx .box .text h3{
+    color: #66CC66;
+    font-weight: 500;
+    margin: 0;
+}
+.contactInfoBx .box .text p,address{
+    font-style: normal;
+    font-weight: 300;
+    color: #999;
+}
+.contactInfoBx .boxSocial{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    letter-spacing: 15px;
+}
+.contactInfoBx .boxSocial .fa{
+    font-size: 42px;
+    color: #66CC66;
+    cursor: pointer;
+}
+
+/* Designing Footer Layout*/
+footer.copyright{
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Making Responsive Layout*/
+@media (max-width: 991px)
+{
+    header,
+    header.sticky{
+        padding: 20px 50px;
+        z-index: 2;
+    }
+    header .menu{
+        display: none;
+        z-index: 1;
+    }
+    header .menu{
+        position:fixed;
+        background: #fff;
+        display: block;
+        top: 75px;
+        left: -100%;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-top:1px solid rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+        -webkit-transition:0.5s;
+        -moz-transition:0.5s;
+        -ms-transition:0.5s;
+        -o-transition:0.5s;
+
+    }
+    header .menu.active{
+        position: fixed;
+        top: 75px;
+        left: 0;
+        padding: 100px 50px;
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+    }
+    header ul li a{
+        font-size: 20px;
+        color: #111;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background:url(images/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .toggle.active{
+        width: 40px;
+        height: 40px;
+        background-image: url(images/close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat:no-repeat;
+        cursor:pointer;
+    }
+    header.sticky .toggle{
+        filter: invert(1);
+        -mos-filter: 0.invert(1);
+        -ms-filter: 0.invert(1);
+        -o-filter: 0.invert(1);
+        -webkit-filter: 0.invert(1);
+    }
+    section{
+        padding: 100px 30px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .textBx{
+        position:relative;
+        top: 170px;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+        -webkit-radius:50px;
+        -moz-radius:50px;
+        -ms-radius:50px;
+        -o-radius:50px;
+    }
+    .content{
+    flex-direction: column;
+    }
+    .contentBx{
+        padding: 0;
+    }
+    .content .w50 img{
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+    .contentBx h2{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .contentBx h3{
+        font-size: 20px;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    .skills .content .skillsBx{
+        margin: 10px;
+    }
+    .contactInfo{
+        margin: 10px 0;
+    }
+
+    @media (max-width: 768){
+        .heading.bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+
+    @media (max-width: 600px){
+        .heading.bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
 }

@@ -17,13 +17,12 @@
     <!-- Creating Menu Tabs and Logo at Top-->
     <header>
         <a href="#" class="logo">Portfolio</a>
-
+        <div class="toggle" onclick="toggleMenu()"></div>
         <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </ul>
     </header>
 
@@ -37,7 +36,7 @@
     </section>
 
     <!-- Creating About Me Layout-->
-    <section class="about" id="bout">
+    <section class="about" id="about">
         <div class="heading">
             <p>Get to know me</p>
             <h2>About me</h2>
@@ -69,7 +68,7 @@
     <!-- Creating Skills Layout-->
     <section class="skills" id="skills">
         <div class="heading white">
-            <h3>My Skills</h3>
+            <h2>My Skills</h2>
             <p>These are my current skills</p>
         </div>
         <div class="content">
@@ -78,33 +77,104 @@
                 <h3>Web Design CSS</h3>
                 <p>Random Junky junky waffles junky</p>
             </div>
-            <div class="skills">
+            <div class="skillsBx">
                 <i class="fa fa-gamepad fa-4x"></i>
                 <h3>Pro Gamer</h3>
                 <p>Gaming by day, slayin noobs at night</p>
             </div>
-            <div class="skills">
+            <div class="skillsBx">
                 <i class="fa fa-gamepad fa-4x"></i>
                 <h3>Pro Gamer</h3>
                 <p>Gaming by day, slayin noobs at night</p>
             </div>
-            <div class="skills">
+            <div class="skillsBx">
                 <i class="fa fa-gamepad fa-4x"></i>
                 <h3>Pro Gamer</h3>
                 <p>Gaming by day, slayin noobs at night</p>
             </div>
-            <div class="skills">
+            <div class="skillsBx">
                 <i class="fa fa-gamepad fa-4x"></i>
                 <h3>Pro Gamer</h3>
                 <p>Gaming by day, slayin noobs at night</p>
             </div>
-            <div class="skills">
+            <div class="skillsBx">
                 <i class="fa fa-gamepad fa-4x"></i>
                 <h3>Pro Gamer</h3>
                 <p>Gaming by day, slayin noobs at night</p>
             </div>
         </div>
     </section>
+
+    <!-- Creating Contact Layout-->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <p>Feel free to contact me with any inquries</p>
+            <h2>Contact Me</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <p>I am always open to new opportunities to learn and grow.</p>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <address>Estevan Salazar,<br>9016 S 16th Way<br>Phoenix,AZ<br>85202</address>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone no :</h3>
+                            <p>505-427-1541</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email Address</h3>
+                            <p>estevansalazar95@gmail.com</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Social Media</h3>
+                    <div class="boxSocial">
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/tebantevan/" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                    <textarea name="" id="" rows="6" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" name="" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Footer Layout-->
+    <footer class="copyright">
+        <p>© 2021, estevansalazar.com, All rights reserved</p>
+    </footer>
 </body>
 
 </html>
