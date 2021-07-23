@@ -450,3 +450,10 @@ footer.copyright{
         }
     }
 }
+
+/* For Icons*/
+ion-icon {
+    font-size: 42px;
+    color: #66CC66;
+    cursor: pointer;
+}
