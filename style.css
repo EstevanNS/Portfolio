@@ -234,9 +234,11 @@ header.sticky ul li a
     color: #999;
 
 }
-.formBx form input[type="submit"]{
-    background: #66CC66;
+.formBx form .button{
+    background: #59b359;
     max-width: 250px;
+    height: 50px;
+    padding: 0;
     cursor: pointer;
     font-weight: 600;
     border-radius: 50px;
@@ -245,7 +247,24 @@ header.sticky ul li a
     -ms-radius:50px;
     -o-radius:50px;
     cursor: pointer;
+    overflow: hidden;
+    font-size: 16px;
     letter-spacing: 2px;
+    border: none;
+    outline: none;
+}
+.formBx form .button:hover{
+    background: #4b974b;
+}
+.formBx form .button:active{
+    background: #224622;
+}
+.formBx form .button_text{
+    display:inline-flex;
+    align-items: center;
+    padding: 0 25px;
+    color: #fff;
+    height: 100%;
 }
 .contactInfo{
     min-width: 40%;
